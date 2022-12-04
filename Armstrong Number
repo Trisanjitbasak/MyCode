@@ -5,7 +5,7 @@ class Armstrongno1{
         int n = sc.nextInt();
         int s, c=0;
         while(n>0){
-            s = n%10;
+            s = n%10;//extracting the last Digit
             c= c+(int)Math.pow(s,3);
             n=n/10;
         }
@@ -15,5 +15,6 @@ class Armstrongno1{
         else{
             System.out.println("Not an Armstrong Number");
         }
+        System.out.println("Edited By Trisanjit");
     }
 }
