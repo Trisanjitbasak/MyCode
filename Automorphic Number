@@ -1,0 +1,17 @@
+import java.util.Scanner;
+class automorphicno{
+    public static void main(){
+        Scanner sc =  new Scanner(System.in);
+        int n = sc.nextInt();
+        int d, s=0;
+        s=(int)Math.pow(n,2);
+        while(n>0){
+            s = s%10;
+            if(s==n)
+                System.out.println("Automorphic Number");
+            else
+            System.out.println("Not an Automorphic Number");
+                continue;
+                }        
+        }
+    }
