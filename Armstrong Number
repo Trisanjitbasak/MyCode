@@ -1,0 +1,19 @@
+import java.util.Scanner;
+class Armstrongno1{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int s, c=0;
+        while(n>0){
+            s = n%10;
+            c= c+(int)Math.pow(s,3);
+            n=n/10;
+        }
+        if(c==n){
+            System.out.println("An Armstrong Number");
+        }
+        else{
+            System.out.println("Not an Armstrong Number");
+        }
+    }
+}
